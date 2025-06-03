@@ -1,4 +1,6 @@
 from flask import Flask
+from ddtrace.runtime import RuntimeMetrics
+RuntimeMetrics.enable()
 import os
 
 app = Flask(__name__)
